@@ -1,5 +1,7 @@
+import { Link, Moon } from "lucide-react";
+
 const AppSidebar = () => {
-  return <div className="">AppSidebar</div>;
+  return <div></div>;
 };
 
 export default AppSidebar;
