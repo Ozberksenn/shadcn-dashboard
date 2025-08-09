@@ -1,5 +1,4 @@
 "use client";
-
 import { Link, LogOut, Moon, Settings, Sun, User } from "lucide-react";
 import {
   DropdownMenu,
@@ -12,13 +11,14 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
+import { SidebarTrigger } from "./ui/sidebar";
 
 const Navbar = () => {
   const { setTheme } = useTheme();
 
   return (
     <nav className="p-4 flex items-center justify-between">
-      collapseButton
+      <SidebarTrigger />
       <div className="flex items-center gap-4">
         <Link>Dashboard</Link>
         <DropdownMenu>
