@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Link, LogOut, Moon, Settings, Sun, User } from "lucide-react";
+import { LogOut, Moon, Settings, Sun, User } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="p-4 flex items-center justify-between">
       <SidebarTrigger />
       <div className="flex items-center gap-4">
-        <Link>Dashboard</Link>
+        Dashboard
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon">
