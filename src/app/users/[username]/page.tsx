@@ -12,6 +12,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { Progress } from "@/components/ui/progress";
 import { BadgeCheck, Candy, Citrus, Shield } from "lucide-react";
 
 const SingleUserPage = () => {
@@ -97,7 +98,31 @@ const SingleUserPage = () => {
             </div>
           </div>
           <div className="bg-primary-foreground p-4 rounded-lg">
-            <h1 className="font-bold mb-2">Information User</h1>
+            <h1 className="font-bold mb-2">User Information</h1>
+            <div className="space-y-4 mt-4">
+              <div className="flex flex-col gap-2 mb-8">
+                <p className="text-sm text-muted-foreground">
+                  Profile Completion
+                </p>
+                <Progress value={66} />
+                <div className="flex items-center gap-2">
+                  <span className="font-bold">Username :</span>
+                  <span>ozbeksen</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="font-bold">Email :</span>
+                  <span>ozberksenn@gmail.com</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="font-bold">Phone :</span>
+                  <span>+1 234 5678</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="font-bold">Location :</span>
+                  <span>New York, NY</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="bg-primary-foreground p-4 rounded-lg">
             <CardList title="Recent Transactions" />
